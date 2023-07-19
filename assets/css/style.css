@@ -407,4 +407,22 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
+/* =================================== features =================================== */
+.features {
+  padding: 55px 0 160px;
+  background: url(/assets/images/features/features_bg_logo.png) right center no-repeat, url(/assets/images/features/features_bg.png) center no-repeat;
+}
+.features__title {
+  color: var(--primary-yelow);
+  text-align: center;
+  max-width: 681px;
+  margin: 0px auto 48px;
+}
+.features__title span {
+  color: var(--additional-white);
+}
+.features__list-item:not(:last-child) {
+  margin: 0px 0px 48px 0px;
+}
+
 /* ---------- media quaries ---------- */

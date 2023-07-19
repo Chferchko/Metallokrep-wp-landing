@@ -36,4 +36,26 @@
 	}
 }
 
+/* =================================== features =================================== */
+.features {
+	padding: 55px 0 160px;
+	background:
+		url(/assets/images/features/features_bg_logo.png) right center no-repeat,
+		url(/assets/images/features/features_bg.png) center no-repeat;
+	&__title {
+		color: var(--primary-yelow);
+		text-align: center;
+		max-width: 681px;
+		span {
+			color: var(--additional-white);
+		}
+		margin: 0px auto 48px;
+	}
+	&__list-item {
+		&:not(:last-child) {
+			margin: 0px 0px 48px 0px;
+		}
+	}
+}
+
 @import "media.scss";
