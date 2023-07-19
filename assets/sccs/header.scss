@@ -1,2 +1,38 @@
 /* ---------- header ---------- */
-
+.header {	
+	background: var(--text-light);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	a {
+		color: var(--additional-white);
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+	&__logo-text {
+		span {
+			font-weight: 400;
+		}
+	}
+	&__menu-list {
+		display: flex;
+		align-items: center;
+	}
+	&__menu-list-item {
+		a {
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
