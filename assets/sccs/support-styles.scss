@@ -1,5 +1,14 @@
 /* ---------- support styles ---------- */
 :root {
+	--additional-white: #FFF;
+	--primary-yelow: #FE0;
+	--additional-blue-light: #F5F6FC;
+	--text-light: #353A40;
+	--text-dark: #1F1C0C;
+
+	--size-regular: 18px;
+	--size-medium: 24px;
+	--size-large: 36px;
 }
 
 html {
@@ -21,7 +30,7 @@ body {
 }
 
 [class*="_container"] {
-	max-width: 1360px;
+	max-width: 1195px;
 	margin: 0px auto;
 	padding: 0 16px;
 	box-sizing: content-box;
