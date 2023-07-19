@@ -8,5 +8,32 @@
 @import "components.scss";
 
 /* =================================== intro =================================== */
+.intro {
+	background: url(/assets/images/intro_bg.png) right center no-repeat;
+	padding: 150px 0 200px;
+	&__content {
+		max-width: 813px;
+	}
+	&__caption {
+		color: var(--primary-yelow);
+		text-transform: uppercase;
+		margin: 0px 0px 10px 0px;
+	}
+	&__title {
+		color: var(--additional-white);
+		margin: 0px 0px 40px 0px;
+	}
+	&__list {
+		color: var(--additional-blue-light);
+		padding: 0 0 0 30px;
+		margin: 0px 0px 35px 0px;
+	}
+	&__list-item {
+		list-style: disc;
+	}
+	&__button {
+		display: inline-block;
+	}
+}
 
 @import "media.scss";
