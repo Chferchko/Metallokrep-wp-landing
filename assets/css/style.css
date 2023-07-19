@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 140%; /* 25.2px */
 }
 
-.section__title {
+.section-title {
   text-align: center;
   font-family: Montserrat;
   font-size: 48px;
@@ -167,8 +167,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
-.section__title_yellow {
+.section-title_yellow {
   color: var(--primary-yelow);
+}
+.section-title_grey {
+  color: var(--text-light);
 }
 
 /* =================================== intro =================================== */
