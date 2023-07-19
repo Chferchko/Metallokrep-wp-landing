@@ -10,15 +10,12 @@
 	--size-medium: 24px;
 	--size-large: 36px;
 }
-
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	font-family: Montserrat;
 }
-
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -27,8 +24,8 @@ body {
 	.main {
 		flex: 1 1 auto;
 	}
+	background-color: var(--text-light);
 }
-
 [class*="_container"] {
 	max-width: 1195px;
 	margin: 0px auto;

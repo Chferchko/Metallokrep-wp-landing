@@ -1,3 +1,10 @@
+.form-main__phonenumber, .form-main__name {
+  padding: 17px;
+  color: var(--text-light);
+  border-radius: 4px;
+  background: var(--additional-blue-light);
+}
+
 /* ---------- support styles ---------- */
 :root {
   --additional-white: #fff;
@@ -23,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-color: var(--text-light);
 }
 .wrapper .main {
   flex: 1 1 auto;
@@ -157,6 +165,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 140%; /* 25.2px */
 }
 
+.B1 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .section-title {
   text-align: center;
   font-family: Montserrat;
@@ -172,6 +188,143 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section-title_grey {
   color: var(--text-light);
+}
+
+.button {
+  font-weight: 500;
+  font-size: var(--size-regular);
+  display: inline-flex;
+  padding: 17px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 4px solid rgba(255, 255, 255, 0);
+  transition: color 0.3s, background 0.3s, border 0.3s;
+}
+.button_yellow {
+  color: var(--text-dark);
+  background: var(--primary-yelow);
+}
+.button_black {
+  color: var(--additional-white);
+  background: var(--text-dark);
+}
+.button:hover {
+  background: #3dbf00;
+  color: var(--additional-white);
+}
+.button:active {
+  color: var(--text-dark);
+  background: var(--primary-yelow);
+  border: 4px solid rgba(56, 176, 0, 0.25);
+}
+
+.list-item {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+}
+.list-item__title {
+  color: var(--primary-yelow);
+}
+.list-item__title:not(:last-child) {
+  margin: 0px 0px 8px 0px;
+}
+.list-item__text {
+  color: var(--additional-white);
+}
+.list-item::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  color: #353a40;
+  background-color: var(--primary-yelow, #fe0);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.list-item_truck::before {
+  background-image: url(/assets/images/features/icons/truck.svg);
+}
+.list-item_spanner::before {
+  background-image: url(/assets/images/features/icons/spanner.svg);
+}
+.list-item_award::before {
+  background-image: url(/assets/images/features/icons/award.svg);
+}
+.list-item_pocket::before {
+  background-image: url(/assets/images/features/icons/pocket.svg);
+}
+.list-item_file-text::before {
+  background-image: url(/assets/images/about/icons/file-text.svg);
+}
+.list-item_settings::before {
+  background-image: url(/assets/images/about/icons/settings.svg);
+}
+.list-item_star::before {
+  background-image: url(/assets/images/about/icons/star.svg);
+}
+
+.li-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.li-check::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.li-check_white::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill='none'%3E%3Cpath d='M20.5 6.24023L9.5 17.2402L4.5 12.2402' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.li-check_yellow::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M20 6.5L9 17.5L4 12.5' stroke='%23FFEE00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.li-check_dark::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M20.5 6L9.5 17L4.5 12' stroke='%231F1C0C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.form-main {
+  padding: 24px;
+  max-width: 516px;
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--text-light);
+  box-shadow: 0px 16px 64px 0px rgba(30, 47, 64, 0.09);
+}
+.form-main_hidden-caption .form-main__caption {
+  display: none;
+}
+.form-main__caption {
+  color: var(--additional-white);
+  margin: 0px 0px 20px 0px;
+}
+.form-main__caption-title {
+  font-weight: 700;
+}
+.form-main__caption-list {
+  padding: 0 0 0 25px;
+}
+.form-main__list-item {
+  list-style: disc;
+}
+.form-main__title {
+  color: var(--additional-white);
+  margin: 0px 0px 24px 0px;
+}
+.form-main__name {
+  margin: 0px 0px 12px 0px;
+}
+.form-main__phonenumber {
+  margin: 0px 0px 24px 0px;
+}
+.form-main__button {
+  margin: 0px 0px 22px 0px;
 }
 
 /* =================================== intro =================================== */
