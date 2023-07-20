@@ -195,7 +195,6 @@
 	}
 }
 .form-main {
-	padding: 24px;
 	max-width: 516px;
 	padding: 24px;
 	border-radius: 8px;
@@ -233,5 +232,32 @@
 	}
 	&__button {
 		margin: 0px 0px 22px 0px;
+	}
+}
+.arrow-bg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	height: 820px;
+	background:
+		url(/assets/images/arrow-bg/arrow-bg.png) center/cover no-repeat,
+		var(--primary-yelow);
+	&::before,
+	&::after {
+		position: absolute;
+		right: 0;
+		content: "";
+		width: 0;
+		height: 0;
+		border-left: 235px solid transparent;
+	}
+	&::before {
+		top: 0;
+		border-top: 410px solid var(--text-light);
+	}
+	&::after {
+		bottom: 0;
+		border-bottom: 410px solid var(--text-light);
 	}
 }
