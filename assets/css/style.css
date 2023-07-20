@@ -341,7 +341,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-main {
-  padding: 24px;
   max-width: 516px;
   padding: 24px;
   border-radius: 8px;
@@ -378,6 +377,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 22px 0px;
 }
 
+.arrow-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 820px;
+  background: url(/assets/images/arrow-bg/arrow-bg.png) center/cover no-repeat, var(--primary-yelow);
+}
+.arrow-bg::before, .arrow-bg::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 235px solid transparent;
+}
+.arrow-bg::before {
+  top: 0;
+  border-top: 410px solid var(--text-light);
+}
+.arrow-bg::after {
+  bottom: 0;
+  border-bottom: 410px solid var(--text-light);
+}
+
 /* =================================== intro =================================== */
 .intro {
   background: url(/assets/images/intro_bg.png) right center no-repeat;
@@ -409,7 +433,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================== features =================================== */
 .features {
-  padding: 55px 0 160px;
+  padding: 55px 0 285px;
+  position: relative;
+  z-index: 2;
   background: url(/assets/images/features/features_bg_logo.png) right center no-repeat, url(/assets/images/features/features_bg.png) center no-repeat;
 }
 .features__title {
@@ -423,6 +449,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 .features__list-item:not(:last-child) {
   margin: 0px 0px 48px 0px;
+}
+
+/* =================================== technology =================================== */
+.technology {
+  padding: 123px 0 289px;
+  position: relative;
+}
+.technology__container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.technology__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 608px; */
+  gap: 30px;
+}
+.technology__title {
+  color: var(--text-dark);
+  font-size: 31.016px;
+  font-weight: 500;
+  line-height: 140%; /* 43.423px */
+}
+.technology__subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.technology__subtitle span {
+  display: block;
+}
+.technology__text {
+  color: var(--text-dark);
+}
+.technology__text span {
+  font-weight: 700;
+}
+.technology__text_custom {
+  padding: 25px;
+  color: var(--additional-white);
+  border-radius: 5px;
+  background: var(--text-light);
+}
+.technology__form {
+  position: relative;
+  z-index: 2;
+}
+.technology .transparent {
+  font-size: 112px;
+  color: transparent;
+  -webkit-text-stroke: 3px #1f1c0c;
+  letter-spacing: 2.24px;
+}
+.technology .bold {
+  font-size: 72.897px;
+  letter-spacing: 1.458px;
 }
 
 /* ---------- media quaries ---------- */

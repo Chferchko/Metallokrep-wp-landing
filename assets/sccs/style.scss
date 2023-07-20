@@ -38,7 +38,9 @@
 
 /* =================================== features =================================== */
 .features {
-	padding: 55px 0 160px;
+	padding: 55px 0 285px;
+	position: relative;
+	z-index: 2;
 	background:
 		url(/assets/images/features/features_bg_logo.png) right center no-repeat,
 		url(/assets/images/features/features_bg.png) center no-repeat;
@@ -55,6 +57,64 @@
 		&:not(:last-child) {
 			margin: 0px 0px 48px 0px;
 		}
+	}
+}
+
+/* =================================== technology =================================== */
+.technology {
+	padding: 123px 0 289px;
+	position: relative;
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: 70px;
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		/* max-width: 608px; */
+		gap: 30px;
+	}
+	&__title {
+		color: var(--text-dark);
+		font-size: 31.016px;
+		font-weight: 500;
+		line-height: 140%; /* 43.423px */
+	}
+	&__subtitle {
+		span {
+			display: block;
+		}
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__text {
+		span {
+			font-weight: 700;
+		}
+		color: var(--text-dark);
+		&_custom {
+			padding: 25px;
+			color: var(--additional-white);
+			border-radius: 5px;
+			background: var(--text-light);
+		}
+	}
+	&__form {
+		position: relative;
+		z-index: 2;
+	}
+	.transparent {
+		font-size: 112px;
+		color: transparent;
+		-webkit-text-stroke: 3px #1f1c0c;
+		letter-spacing: 2.24px;
+	}
+	.bold {
+		font-size: 72.897px;
+		letter-spacing: 1.458px;
 	}
 }
 

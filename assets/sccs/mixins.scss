@@ -1,6 +1,6 @@
 // ------------------ Adapt property
-$maxWidth: 1280;
-$maxWidthContainer: 1200;
+$maxWidth: 1920;
+$maxWidthContainer: 1195;
 @mixin adapt-value($property, $startSize, $minSize, $type) {
 	$addSize: $startSize - $minSize;
 	@if $type==1 { //Только если меньше контейнера
