@@ -8,18 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	function removeArrowOpenClass(arrow, openclass) {
 		arrow.classList.remove(openclass);
 	}
-	function scrollHandler(e) {
+	function addArrowsOpenClassOnScreen(arrows, openclass) {
 		arrows.forEach(arrow => {
 			let windowHeight = document.body.offsetHeight;
 			let arrowHeight = arrow.getBoundingClientRect().height;
 			let arrowPositionOfTopWindow = arrow.getBoundingClientRect().top;
 			let heightOfAvailableScreenArea = windowHeight - arrowHeight;
 			let isArrowLocatedOnScreen = (arrowPositionOfTopWindow > 0) && (arrowPositionOfTopWindow < heightOfAvailableScreenArea) || (arrowHeight >= windowHeight);
-
-			isArrowLocatedOnScreen ? addArrowOpenClass(arrow, openClass) : removeArrowOpenClass(arrow, openClass);
-		});
+			isArrowLocatedOnScreen ? addArrowOpenClass(arrow, openclass) : removeArrowOpenClass(arrow, openclass);
+		});		
 	}
-
+	function scrollHandler(e) {
+		addArrowsOpenClassOnScreen(arrows, openClass);
+	}
 	document.addEventListener('scroll', scrollHandler);
 
 });
