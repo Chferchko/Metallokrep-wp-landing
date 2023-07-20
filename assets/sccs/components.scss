@@ -243,6 +243,7 @@
 	background:
 		url(/assets/images/arrow-bg/arrow-bg.png) center/cover no-repeat,
 		var(--primary-yelow);
+	transition: right 0.3s;
 	&::before,
 	&::after {
 		position: absolute;
@@ -251,6 +252,7 @@
 		width: 0;
 		height: 0;
 		border-left: 235px solid transparent;
+		transition: right 0.3s;
 	}
 	&::before {
 		top: 0;
@@ -259,5 +261,8 @@
 	&::after {
 		bottom: 0;
 		border-bottom: 410px solid var(--text-light);
+	}
+	&.open {
+		right: -235px;
 	}
 }

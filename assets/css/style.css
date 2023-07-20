@@ -384,6 +384,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   height: 820px;
   background: url(/assets/images/arrow-bg/arrow-bg.png) center/cover no-repeat, var(--primary-yelow);
+  transition: right 0.3s;
 }
 .arrow-bg::before, .arrow-bg::after {
   position: absolute;
@@ -392,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0;
   height: 0;
   border-left: 235px solid transparent;
+  transition: right 0.3s;
 }
 .arrow-bg::before {
   top: 0;
@@ -400,6 +402,9 @@ h1, h2, h3, h4, h5, h6 {
 .arrow-bg::after {
   bottom: 0;
   border-bottom: 410px solid var(--text-light);
+}
+.arrow-bg.open {
+  right: -235px;
 }
 
 /* =================================== intro =================================== */
