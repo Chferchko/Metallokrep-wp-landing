@@ -122,7 +122,7 @@
 
 /* =================================== products =================================== */
 .products {
-	padding: 125px 0 60px;
+	padding: 25px 0 0;
 	background: url("/assets/images/products/products-bg.png") center no-repeat;
 	&__container {
 		display: flex;
@@ -316,6 +316,66 @@
 	&__services-description-list-item {
 		&:not(:last-child) {
 			margin: 0px 0px 12px 0px;
+		}
+	}
+}
+
+/* =================================== about =================================== */
+.about {
+	padding: 150px 0 250px;
+	background: url("/assets/images/about/about-bg.png") center top no-repeat;
+	&__title {
+		margin: 0px 0px 78px 0px;
+	}
+	&__description {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__description-info {
+		flex: 0 1 645px;
+	}
+	&__description-logo {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 0px 45px 0px;
+	}
+	&__logo-title {
+		flex: 0 1 462px;
+		color: var(--primary-yelow);
+		font-size: 45.331px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 110%; /* 49.864px */
+		letter-spacing: 0.907px;
+		span {
+			font-weight: 700;
+		}
+	}
+	&__description-text {
+		color: var(--additional-white);
+	}
+	&__description-list {
+		flex: 0 1 548px;
+	}
+	&__description-list-item {
+		.list-item__title {
+			font-size: 16.948px;
+			&:not(:last-child) {
+				margin: 0px 0px 5px 0px;
+			}
+		}
+		.list-item__text {
+			font-size: 12.711px;
+			span {
+				font-weight: 700;
+			}
+		}
+		&::before {
+			content: "";
+			display: block;
+			width: 56.5px;
+			height: 56.5px;
 		}
 	}
 }
