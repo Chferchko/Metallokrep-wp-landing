@@ -37,7 +37,7 @@ var swiper = new Swiper(".products__example-slider", {
 
 	slidesPerView: 1, // Количество слайдов для показа
 
-	spaceBetween: 15, // Отступ между слайдами
+	spaceBetween: 30, // Отступ между слайдами
 
 	slidesPerGroup: 1, // Количество пролистываемых слайдов
 
