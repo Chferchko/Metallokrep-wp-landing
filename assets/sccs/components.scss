@@ -269,7 +269,7 @@
 		width: 100%;
 		height: 100%;
 		opacity: 0.2;
-		background: url(/assets/images/arrow-bg/mountain.png) center 100% / cover no-repeat;
+		background: url(/assets/images/arrow-bg/mountain.png) center/cover no-repeat;
 	}
 	&.open {
 		right: -235px;
