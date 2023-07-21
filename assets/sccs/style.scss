@@ -118,4 +118,148 @@
 	}
 }
 
+/* =================================== products =================================== */
+.products {
+	padding: 125px 0 60px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+	}
+	/* ========= products__example ========= */
+	&__example {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+	&__example-slider {
+		flex: 0 0 500px;
+	}
+	.swiper {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.swiper-slide {
+		height: 500px;
+		border-radius: 15px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.swiper-pagination {
+		bottom: 22px !important;
+	}
+	.swiper-pagination-bullet {
+		width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 21px));
+		height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 21px));
+		background: var(--swiper-pagination-bullet-inactive-color, #d9d9d9);
+		opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+		margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px) !important;
+	}
+	.swiper-pagination-bullet-active {
+		background: var(--swiper-pagination-bullet-inactive-color, #ffee00);
+	}
+	&__example-content {
+		color: var(--additional-white);
+		flex: 0 1 575px;
+	}
+	&__example-text {
+		display: flex;
+		flex-direction: column;
+		gap: 16px 0;
+		margin: 0px 0px 24px 0px;
+		max-width: 535px;
+	}
+	&__example-title {
+		text-transform: uppercase;
+		margin: 0px 0px 16px 0px;
+	}
+	&__example-list-item {
+		&:not(:last-child) {
+			margin: 0px 0px 5px 0px;
+		}
+	}
+	/* ========= products__catalog ========= */
+	&__catalog {
+		display: flex;
+		align-items: center;
+	}
+	&__catalog-link {
+	}
+	&__catalog-link-title {
+	}
+	&__catalog-link-button {
+	}
+	&__catalog-description {
+	}
+	&__catalog-description-title {
+	}
+	&__catalog-description-list {
+	}
+	&__catalog-description-list-item {
+	}
+	/* ========= products__minova ========= */
+	&__minova {
+		display: flex;
+		align-items: center;
+	}
+	&__minova-content {
+	}
+	&__minova-title {
+	}
+	&__minova-description {
+	}
+	&__minova-catalog-link {
+	}
+	&__minova-logo {
+	}
+	&__minova-button {
+	}
+	/* ========= products__list ========= */
+	&__list {
+	}
+	&__list-row {
+		display: flex;
+		align-items: center;
+	}
+	&__list-item {
+	}
+	&__list-item-img {
+	}
+	&__list-item-title {
+	}
+	&__list-item-text {
+	}
+	/* ========= products__services ========= */
+	&__services {
+		display: flex;
+		align-items: center;
+	}
+	&__services-link {
+	}
+	&__services-link-title {
+	}
+	&__services-link-button {
+	}
+	&__services-technologies {
+	}
+	&__services-technologies-title {
+	}
+	&__services-technologies-list {
+	}
+	&__services-technologies-list-item {
+	}
+	&__services-description {
+	}
+	&__services-description-title {
+	}
+	&__services-description-list {
+	}
+	&__services-description-list-item {
+	}
+}
+
 @import "media.scss";
