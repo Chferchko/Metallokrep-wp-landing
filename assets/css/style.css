@@ -158,6 +158,79 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------- footer ---------- */
+.footer {
+  position: relative;
+  padding: 190px 0;
+}
+.footer__title {
+  position: relative;
+  z-index: 2;
+  margin: 0px 0px 80px 0px;
+}
+.footer__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__contacts {
+  flex: 0 1 440px;
+  color: var(--text-light);
+}
+.footer__contacts-email::before {
+  background-image: url("/assets/images/footer/icons/mail.svg");
+}
+.footer__contacts-phone {
+  margin: 0px 0px 47px 0px;
+}
+.footer__contacts-phone::before {
+  background-image: url("/assets/images/footer/icons/phone.svg");
+}
+.footer__contacts-email, .footer__contacts-phone {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 17px;
+}
+.footer__contacts-email a, .footer__contacts-phone a {
+  position: relative;
+  display: block;
+  color: inherit;
+}
+.footer__contacts-email a:not(:last-child), .footer__contacts-phone a:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.footer__contacts-email a::before, .footer__contacts-phone a::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 50%;
+  right: 50%;
+  height: 1px;
+  background-color: var(--text-light);
+  transition: left 0.3s, right 0.3s;
+}
+.footer__contacts-email a:hover::before, .footer__contacts-phone a:hover::before {
+  left: 0;
+  right: 0;
+}
+.footer__contacts-email::before, .footer__contacts-phone::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  border-radius: 3.705px;
+  background-color: var(--text-light);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__address:not(:last-child), .footer__sign:not(:last-child) {
+  margin: 0px 0px 11px 0px;
+}
+.footer__arrow {
+  top: 0px;
+}
+
 .H2 {
   font-family: Montserrat;
   font-size: var(--size-large);
@@ -347,9 +420,6 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--text-light);
   box-shadow: 0px 16px 64px 0px rgba(30, 47, 64, 0.09);
 }
-.form-main_hidden-caption .form-main__caption {
-  display: none;
-}
 .form-main__caption {
   color: var(--additional-white);
   margin: 0px 0px 20px 0px;
@@ -373,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-main__phonenumber {
   margin: 0px 0px 24px 0px;
 }
-.form-main__button {
+.form-main__button:not(:last-child) {
   margin: 0px 0px 22px 0px;
 }
 
@@ -728,6 +798,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 0px 109px 0px;
 }
 .about__description-info {
   flex: 0 1 645px;

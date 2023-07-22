@@ -200,11 +200,6 @@
 	border-radius: 8px;
 	background: var(--text-light);
 	box-shadow: 0px 16px 64px 0px rgba(30, 47, 64, 0.09);
-	&_hidden-caption {
-		.form-main__caption {
-			display: none;
-		}
-	}
 	&__caption {
 		color: var(--additional-white);
 		margin: 0px 0px 20px 0px;
@@ -231,7 +226,9 @@
 		margin: 0px 0px 24px 0px;
 	}
 	&__button {
-		margin: 0px 0px 22px 0px;
+		&:not(:last-child) {
+			margin: 0px 0px 22px 0px;
+		}
 	}
 }
 .arrow-bg {

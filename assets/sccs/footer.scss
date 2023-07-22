@@ -1,2 +1,81 @@
 /* ---------- footer ---------- */
-
+.footer {
+	position: relative;
+	padding: 190px 0;
+	&__title {
+		position: relative;
+		z-index: 2;
+		margin: 0px 0px 80px 0px;
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__contacts {
+		flex: 0 1 440px;
+		color: var(--text-light);
+	}
+	&__contacts-email {
+		&::before {
+			background-image: url("/assets/images/footer/icons/mail.svg");
+		}
+	}
+	&__contacts-phone {
+		margin: 0px 0px 47px 0px;
+		&::before {
+			background-image: url("/assets/images/footer/icons/phone.svg");
+		}
+	}
+	&__contacts-email,
+	&__contacts-phone {
+		display: flex;
+		align-items: center;
+		gap: 17px;
+		padding: 17px;
+		a {
+			position: relative;
+			display: block;
+			color: inherit;
+			&:not(:last-child) {
+				margin: 0px 0px 10px 0px;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				bottom: -5px;
+				left: 50%;
+				right: 50%;
+				height: 1px;
+				background-color: var(--text-light);
+				transition:
+					left 0.3s,
+					right 0.3s;
+			}
+			&:hover::before {
+				left: 0;
+				right: 0;
+			}
+		}
+		&::before {
+			content: "";
+			width: 37px;
+			height: 37px;
+			border-radius: 3.705px;
+			background-color: var(--text-light);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+	&__address,
+	&__sign {
+		&:not(:last-child) {
+			margin: 0px 0px 11px 0px;
+		}
+	}
+	&__arrow {
+		top: 0px;
+	}
+}
