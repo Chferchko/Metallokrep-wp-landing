@@ -9,7 +9,7 @@
 
 /* =================================== intro =================================== */
 .intro {
-	background: url(assets/images/intro_bg.png) right center no-repeat;
+	background: url("assets/images/intro_bg.png") right center no-repeat;
 	padding: 150px 0 200px;
 	&__content {
 		max-width: 813px;
@@ -42,8 +42,8 @@
 	position: relative;
 	z-index: 2;
 	background:
-		url(assets/images/features/features_bg_logo.png) right center no-repeat,
-		url(assets/images/features/features_bg.png) center no-repeat;
+		url("assets/images/features/features_bg_logo.png") right center no-repeat,
+		url("assets/images/features/features_bg.png") center no-repeat;
 	&__title {
 		color: var(--primary-yelow);
 		text-align: center;
