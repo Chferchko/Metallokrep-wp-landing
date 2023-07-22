@@ -20,13 +20,14 @@
 	}
 	&__contacts-email {
 		&::before {
-			background-image: url("assets/images/footer/icons/mail.svg");
+			background-image: url("../images/footer/icons/mail.svg");
+			
 		}
 	}
 	&__contacts-phone {
 		margin: 0px 0px 47px 0px;
 		&::before {
-			background-image: url("assets/images/footer/icons/phone.svg");
+			background-image: url("../images/footer/icons/phone.svg");
 		}
 	}
 	&__contacts-email,

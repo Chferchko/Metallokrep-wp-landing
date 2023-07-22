@@ -179,13 +179,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-light);
 }
 .footer__contacts-email::before {
-  background-image: url("assets/images/footer/icons/mail.svg");
+  background-image: url("../images/footer/icons/mail.svg");
 }
 .footer__contacts-phone {
   margin: 0px 0px 47px 0px;
 }
 .footer__contacts-phone::before {
-  background-image: url("assets/images/footer/icons/phone.svg");
+  background-image: url("../images/footer/icons/phone.svg");
 }
 .footer__contacts-email, .footer__contacts-phone {
   display: flex;
@@ -370,25 +370,25 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 .list-item_truck::before {
-  background-image: url("assets/images/features/icons/truck.svg");
+  background-image: url("../images/features/icons/truck.svg");
 }
 .list-item_spanner::before {
-  background-image: url("assets/images/features/icons/spanner.svg");
+  background-image: url("../images/features/icons/spanner.svg");
 }
 .list-item_award::before {
-  background-image: url("assets/images/features/icons/award.svg");
+  background-image: url("../images/features/icons/award.svg");
 }
 .list-item_pocket::before {
-  background-image: url("assets/images/features/icons/pocket.svg");
+  background-image: url("../images/features/icons/pocket.svg");
 }
 .list-item_file-text::before {
-  background-image: url("assets/images/about/icons/file-text.svg");
+  background-image: url("../images/about/icons/file-text.svg");
 }
 .list-item_settings::before {
-  background-image: url("assets/images/about/icons/settings.svg");
+  background-image: url("../images/about/icons/settings.svg");
 }
 .list-item_star::before {
-  background-image: url("assets/images/about/icons/star.svg");
+  background-image: url("../images/about/icons/star.svg");
 }
 
 .li-check {
@@ -482,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background: url("assets/images/arrow-bg/mountain.png") center/cover no-repeat;
+  background: url("../images/arrow-bg/mountain.png") center/cover no-repeat;
 }
 .arrow-bg.open {
   right: -235px;
@@ -490,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================== intro =================================== */
 .intro {
-  background: url("assets/images/intro_bg.png") right center no-repeat;
+  background: url("../images/intro_bg.png") right center no-repeat;
   padding: 150px 0 200px;
 }
 .intro__content {
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 55px 0 285px;
   position: relative;
   z-index: 2;
-  background: url("assets/images/features/features_bg_logo.png") right center no-repeat, url("assets/images/features/features_bg.png") center no-repeat;
+  background: url("../images/features/features_bg_logo.png") right center no-repeat, url("../images/features/features_bg.png") center no-repeat;
 }
 .features__title {
   color: var(--primary-yelow);
@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6 {
 /* =================================== products =================================== */
 .products {
   padding: 25px 0 0;
-  background: url("assets/images/products/products-bg.png") center no-repeat;
+  background: url("../images/products/products-bg.png") center no-repeat;
   /* ========= products__example ========= */
   /* ========= products__catalog ========= */
   /* ========= products__minova ========= */
@@ -789,7 +789,7 @@ h1, h2, h3, h4, h5, h6 {
 /* =================================== about =================================== */
 .about {
   padding: 150px 0 250px;
-  background: url("assets/images/about/about-bg.png") center top no-repeat;
+  background: url("../images/about/about-bg.png") center top no-repeat;
 }
 .about__title {
   margin: 0px 0px 78px 0px;
