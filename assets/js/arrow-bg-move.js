@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			let windowHeight = document.body.offsetHeight;
 			let arrowHeight = arrow.getBoundingClientRect().height;
 			let arrowPositionOfTopWindow = arrow.getBoundingClientRect().top;
-			let heightOfAvailableScreenArea = windowHeight - arrowHeight;
+			let heightOfAvailableScreenArea = windowHeight - arrowHeight + 5;
 			let isArrowLocatedOnScreen = (arrowPositionOfTopWindow > 0) && (arrowPositionOfTopWindow < heightOfAvailableScreenArea) || (arrowHeight >= windowHeight);
 			isArrowLocatedOnScreen ? addArrowOpenClass(arrow, openclass) : removeArrowOpenClass(arrow, openclass);
 		});		
