@@ -75,11 +75,13 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 6px;
-	border: 4px solid rgba(255, 255, 255, 0);
+	/* border: 4px solid rgba(255, 255, 255, 0); */
+	outline: none;
 	transition:
 		color 0.3s,
 		background 0.3s,
-		border 0.3s;
+		/* border 0.3s, */
+		outline 0.3s;
 	&:hover {
 		background: #3dbf00;
 		color: var(--additional-white);
@@ -87,7 +89,8 @@
 	&:active {
 		color: var(--text-dark);
 		background: var(--primary-yelow);
-		border: 4px solid rgba(56, 176, 0, 0.25);
+		/* border: 4px solid rgba(56, 176, 0, 0.25); */
+		outline: 4px solid rgba(56, 176, 0, 0.25);
 	}
 }
 .ghost-button {
