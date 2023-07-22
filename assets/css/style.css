@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 11px 0px;
 }
 .footer__arrow {
-  top: 0px;
+  top: 13px;
 }
 
 .H2 {
@@ -307,8 +307,9 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  border: 4px solid rgba(255, 255, 255, 0);
-  transition: color 0.3s, background 0.3s, border 0.3s;
+  /* border: 4px solid rgba(255, 255, 255, 0); */
+  outline: none;
+  transition: color 0.3s, background 0.3s, outline 0.3s;
 }
 .button_yellow {
   color: var(--text-dark);
@@ -325,7 +326,8 @@ h1, h2, h3, h4, h5, h6 {
 .button:active {
   color: var(--text-dark);
   background: var(--primary-yelow);
-  border: 4px solid rgba(56, 176, 0, 0.25);
+  /* border: 4px solid rgba(56, 176, 0, 0.25); */
+  outline: 4px solid rgba(56, 176, 0, 0.25);
 }
 
 .ghost-button {
@@ -740,25 +742,49 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 .products__list-item {
+  position: relative;
   flex: 0 1 358px;
   padding: 25px;
+  perspective: 1400px;
+  perspective-origin: 50%;
+}
+.products__list-item:hover .products__list-item-img {
+  transform: rotateX(-180deg);
+}
+.products__list-item:hover .products__list-item-text {
+  transform: rotateX(0);
 }
 .products__list-item-img {
   border-radius: 5px;
   overflow: hidden;
   margin: 0px 0px 15px 0px;
+  transform: rotateX(0deg);
 }
 .products__list-item-title {
-  min-height: 67.2px;
   color: var(--primary-yelow);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 33.6px */
+}
+.products__list-item-title:not(:last-child) {
   margin: 0px 0px 5px 0px;
 }
 .products__list-item-text {
-  color: var(--additional-white);
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 319px;
+  height: 319px;
+  padding: 25px;
+  border-radius: 5px;
+  color: var(--text-light);
+  transform: rotateX(180deg);
+  background-color: var(--additional-white);
+}
+.products__list-item-img, .products__list-item-text {
+  backface-visibility: hidden;
+  transition: transform 0.7s;
 }
 .products__services {
   display: flex;
