@@ -490,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================== intro =================================== */
 .intro {
-  background: url(/assets/images/intro_bg.png) right center no-repeat;
+  background: url(assets/images/intro_bg.png) right center no-repeat;
   padding: 150px 0 200px;
 }
 .intro__content {
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 55px 0 285px;
   position: relative;
   z-index: 2;
-  background: url(/assets/images/features/features_bg_logo.png) right center no-repeat, url(/assets/images/features/features_bg.png) center no-repeat;
+  background: url(assets/images/features/features_bg_logo.png) right center no-repeat, url(assets/images/features/features_bg.png) center no-repeat;
 }
 .features__title {
   color: var(--primary-yelow);
@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6 {
 /* =================================== products =================================== */
 .products {
   padding: 25px 0 0;
-  background: url("/assets/images/products/products-bg.png") center no-repeat;
+  background: url("assets/images/products/products-bg.png") center no-repeat;
   /* ========= products__example ========= */
   /* ========= products__catalog ========= */
   /* ========= products__minova ========= */
@@ -789,7 +789,7 @@ h1, h2, h3, h4, h5, h6 {
 /* =================================== about =================================== */
 .about {
   padding: 150px 0 250px;
-  background: url("/assets/images/about/about-bg.png") center top no-repeat;
+  background: url("assets/images/about/about-bg.png") center top no-repeat;
 }
 .about__title {
   margin: 0px 0px 78px 0px;

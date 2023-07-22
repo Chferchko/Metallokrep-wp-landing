@@ -133,37 +133,37 @@
 	}
 	&_truck {
 		&::before {
-			background-image: url(/assets/images/features/icons/truck.svg);
+			background-image: url(assets/images/features/icons/truck.svg);
 		}
 	}
 	&_spanner {
 		&::before {
-			background-image: url(/assets/images/features/icons/spanner.svg);
+			background-image: url(assets/images/features/icons/spanner.svg);
 		}
 	}
 	&_award {
 		&::before {
-			background-image: url(/assets/images/features/icons/award.svg);
+			background-image: url(assets/images/features/icons/award.svg);
 		}
 	}
 	&_pocket {
 		&::before {
-			background-image: url(/assets/images/features/icons/pocket.svg);
+			background-image: url(assets/images/features/icons/pocket.svg);
 		}
 	}
 	&_file-text {
 		&::before {
-			background-image: url(/assets/images/about/icons/file-text.svg);
+			background-image: url(assets/images/about/icons/file-text.svg);
 		}
 	}
 	&_settings {
 		&::before {
-			background-image: url(/assets/images/about/icons/settings.svg);
+			background-image: url(assets/images/about/icons/settings.svg);
 		}
 	}
 	&_star {
 		&::before {
-			background-image: url(/assets/images/about/icons/star.svg);
+			background-image: url(assets/images/about/icons/star.svg);
 		}
 	}
 }
@@ -266,7 +266,7 @@
 		width: 100%;
 		height: 100%;
 		opacity: 0.2;
-		background: url(/assets/images/arrow-bg/mountain.png) center/cover no-repeat;
+		background: url(assets/images/arrow-bg/mountain.png) center/cover no-repeat;
 	}
 	&.open {
 		right: -235px;
