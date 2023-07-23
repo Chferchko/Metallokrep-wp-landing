@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const arrows = document.querySelectorAll('.arrow-bg');
 	const openClass = 'open';
+
 	function addArrowOpenClass(arrow, openclass) {
 		arrow.classList.add(openclass);
 	}
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	function scrollHandler(e) {
 		addArrowsOpenClassOnScreen(arrows, openClass);
 	}
+	
 	document.addEventListener('scroll', scrollHandler);
 
 });
