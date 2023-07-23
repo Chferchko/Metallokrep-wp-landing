@@ -14,7 +14,28 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	width: 100%;
 	font-family: Montserrat;
+	&::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		transition:
+			background 0.3s,
+			z-index 0.3s;
+		background: #00000000;
+		z-index: -1;
+	}
+	&.lock {
+		background: #000000c4;
+		&::before {
+			background: #000000d0;
+			z-index: 98;
+		}
+	}
 }
 .wrapper {
 	min-height: 100%;

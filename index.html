@@ -26,7 +26,7 @@
 						<li class="header__menu-list-item"><a class="ghost-button" href="#">Контакты</a></li>
 					</ul>
 				</nav>
-				<a href="#" class="header__button ghost-button">Заказать звонок</a>
+				<a href="#" class="header__button ghost-button popup-opener-button">Заказать звонок</a>
 			</div>
 		</header>
 		<main class="main">
@@ -42,7 +42,7 @@
 							<li class="intro__list-item">Проверенные логистические решения для доставки по России и странам СНГ
 							</li>
 						</ul>
-						<a href="#" class="intro__button button button_yellow">Заказать звонок</a>
+						<a href="#" class="intro__button button button_yellow popup-opener-button">Заказать звонок</a>
 					</div>
 				</div>
 			</section>
@@ -112,7 +112,7 @@
 						<h3 class="form-main__title H3">Получить консультацию</h3>
 						<input class="form-main__name B1" type="text" name="name" placeholder="Имя" required>
 						<input class="form-main__phonenumber B1" type="tel" name="phone" placeholder="Ваш номер" required>
-						<button name="form-sender" class="form-main__button button button_black" type="submit"
+						<button name="form-sender" class="form-main__button button button_black send-button" type="submit"
 							value="ok">Заказать звонок</button>
 					</form>
 					<div class="technology__arrow arrow-bg">
@@ -155,13 +155,13 @@
 										упрощения монтажа</li>
 								</ul>
 							</div>
-							<a href="#" class="products__example__button button button_yellow">Получить расчет</a>
+							<a href="#" class="products__example__button button button_yellow popup-opener-button">Получить расчет</a>
 						</div>
 					</div>
 					<div class="products__catalog">
 						<div class="products__catalog-link">
 							<h2 class="products__catalog-link-title H2">Смотреть всю продукцию</h2>
-							<a href="#" class="products__catalog-link-button button button_black">Перейти в каталог</a>
+							<a href="#" class="products__catalog-link-button button button_black popup-opener-button">Перейти в каталог</a>
 						</div>
 						<div class="products__catalog-description">
 							<h3 class="products__catalog-description-title H3">В нашем каталоге вы найдете</h3>
@@ -180,7 +180,7 @@
 						</div>
 						<div class="products__minova-catalog-link">
 							<div class="products__minova-logo"><img src="assets/images/products/minova-logo.png" alt=""></div>
-							<div class="products__minova-button button button_black">Ознакомиться с каталогом</div>
+							<a href="#" class="products__minova-button button button_black popup-opener-button">Ознакомиться с каталогом</a>
 						</div>
 					</div>
 					<div class="products__list">
@@ -205,7 +205,7 @@
 					<div class="products__services">
 						<div class="products__services-link">
 							<h2 class="products__services-link-title H2">Дополнительные услуги</h2>
-							<a href="#" class="products__services-link-button button button_yellow">Заказать услугу</a>
+							<a href="#" class="products__services-link-button button button_yellow popup-opener-button">Заказать услугу</a>
 						</div>
 						<div class="products__services-technologies">
 							<h3 class="products__services-technologies-title H3">Технологии</h3>
@@ -278,7 +278,7 @@
 							<h3 class="form-main__title H3">Заказать прайс-лист</h3>
 							<input class="form-main__name B1" type="text" name="name" placeholder="Имя" required>
 							<input class="form-main__phonenumber B1" type="tel" name="phone" placeholder="Ваш номер" required>
-							<button name="form-sender" class="form-main__button button button_black" type="submit" value="ok">Отправить</button>
+							<button name="form-sender" class="form-main__button button button_black send-button" type="submit" value="ok">Отправить</button>
 						</form>
 					</div>
 					<div class="footer__contacts">
@@ -303,11 +303,38 @@
 			</div>
 		</footer>
 	</div>
+	<div id="order-popup" class="order-popup">
+		<div class="order-popup__header">
+			<h3 class="order-popup__title H3">Получить прайс</h3>
+			<span class="order-popup__closer">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M18 6L6 18" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M6 6L18 18" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</span>
+		</div>
+		<div class="order-popup__form-wrapper">
+			<form class="order-popup__form form-popup">
+				<input class="form-popup__name B1" type="text" name="popup-name" placeholder="Имя" required>
+				<input class="form-popup__phonenumber B1" type="tel" name="popup-phone" placeholder="+7 ___ ___ __-__" required>
+				<button class="form-popup__button button button_yellow send-button" name="popup-form-sender" type="submit" value="ok">Заказать звонок</button>				
+			</form>
+		</div>
+	</div>
+	<div class="thx-popup">
+		<h3 class="thx-popup__title H3">Спасибо</h3>
+		<p class="thx-popup__text P2">В ближайшее время с вами свяжется наш менеджер</p>
+		<a href="#" class="thx-popup__button button button_yellow">Отлично</a>
+	</div>
 </body>
 
-<script src="assets/jsjquery.min.js"></script>
-<script src="assets/js/arrow-bg-move.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/sliders.js"></script>
+<script src="assets/js/arrow-bg-move.js"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script src="assets/js/phonemask.js"></script>
+<script src="assets/js/popup-actions.js"></script>
 
 </html>
