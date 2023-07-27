@@ -121,18 +121,12 @@
 
 /* =================================== products =================================== */
 .products {
-	padding: 25px 0 0;
+	padding: 125px 0 100px;
 	background: url("../images/products/products-bg.png") center no-repeat;
 	&__container {
 		display: flex;
 		flex-direction: column;
 		gap: 100px;
-		&::before,
-		&::after {
-			content: "";
-			height: 100%;
-			width: 200px;
-		}
 	}
 	/* ========= products__example ========= */
 	&__example {

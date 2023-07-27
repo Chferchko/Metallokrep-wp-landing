@@ -717,7 +717,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================== products =================================== */
 .products {
-  padding: 25px 0 0;
+  padding: 125px 0 100px;
   background: url("../images/products/products-bg.png") center no-repeat;
   /* ========= products__example ========= */
   /* ========= products__catalog ========= */
@@ -729,11 +729,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 100px;
-}
-.products__container::before, .products__container::after {
-  content: "";
-  height: 100%;
-  width: 200px;
 }
 .products__example {
   display: flex;
