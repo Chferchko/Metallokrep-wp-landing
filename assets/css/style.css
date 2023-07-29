@@ -660,9 +660,6 @@ h1, h2, h3, h4, h5, h6 {
 .intro__list-item {
   list-style: disc;
 }
-.intro__button {
-  display: inline-block;
-}
 
 /* =================================== features =================================== */
 .features {
@@ -1051,8 +1048,23 @@ h1, h2, h3, h4, h5, h6 {
   .header__menu-list {
     flex-direction: column;
   }
+  .intro {
+    background-blend-mode: color;
+    background: url("../images/intro_bg.png") right center/cover no-repeat, rgba(53, 58, 64, 0.4901960784);
+  }
+}
+@media (max-width: 769px) {
+  .intro {
+    padding: 120px 0 50px;
+  }
+  .intro__title {
+    font-size: var(--size-medium);
+  }
 }
 @media (max-width: 577px) {
+  .button {
+    width: 100%;
+  }
   .header__logo-text {
     display: none;
   }
@@ -1064,5 +1076,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__mobile-button {
     display: block;
+  }
+  .intro__title {
+    margin: 0px 0px 20px 0px;
+  }
+  .intro__list {
+    padding: 0 0 0 15px;
+  }
+}
+@media (max-width: 426px) {
+  .intro__title {
+    --size-medium: 20px;
   }
 }
