@@ -1,11 +1,67 @@
 /* ---------- media quaries ---------- */
 @media (max-width: 993px) {
+	.header {
+		&__container {
+			position: relative;
+		}
+		&__menu-burger {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			flex: 0 0 40px;
+			gap: 10px;
+			padding: 10px 0;
+			transform: rotate(0deg);
+			transition: transform 0.3s;
+			&.mobile-menu-open {
+				transform: rotate(-90deg);
+			}
+		}
+		&__logo {
+			flex: 1 1 auto;
+		}
+		&__menu {
+			position: fixed;
+			top: 99px;
+			right: -320px;
+			background: var(--text-light);
+			min-width: 320px;
+			z-index: 80;
+			border-radius: 0 0 10px 10px;
+			transition: right 0.3s;
+			&.mobile-menu-open {
+				right: 0;
+			}
+		}
+		&__button {
+			margin: 0 15px;
+		}
+		&__menu-list {
+			flex-direction: column;
+		}
+	}
 }
 
 @media (max-width: 769px) {
 }
 
 @media (max-width: 577px) {
+	.header {
+		&__logo-text {
+			display: none;
+		}
+		&__button {
+			span {
+				display: none;
+			}
+			&.ghost-button {
+				padding: 11px;
+			}
+		}
+		&__mobile-button {
+			display: block;
+		}
+	}
 }
 
 @media (max-width: 426px) {

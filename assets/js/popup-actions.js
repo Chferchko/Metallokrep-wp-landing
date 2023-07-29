@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const displayClass = 'visible-popup';
 	const lockClass = 'lock';
 	const popupCloserSelector = '.order-popup__closer';
+	const popupOpenerSelector = '.popup-opener-button';
 	const body = document.body;
 	const orderPopup = document.getElementById('order-popup');
 	const popupOpeners = document.querySelectorAll('.popup-opener-button');
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const thxPopup = document.querySelector('.thx-popup');
 	const thxPopupButton = document.querySelector('.thx-popup__button');
 
-	let getTargetCloserParent = (target) => target.closest(popupCloserSelector);
+	let getTargetParent = (target, parent) => target.closest(parent);
 
 	function togglePopupDisplayClass(popup, displayclass) {
 		popup.classList.toggle(displayclass);
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function isEventOnElements(event, elements) {
-		return elements.includes(event.target) || elements.includes(getTargetCloserParent(event.target));
+		return elements.includes(event.target) || elements.includes(getTargetParent(event.target, popupCloserSelector)) || elements.includes(getTargetParent(event.target, popupOpenerSelector));
 	}
 	function toggleLockTagOnClickElementsEvent(tag, elements, event) {
 		isEventOnElements(event, elements) ? toggleLockTag(tag) : false;
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		toggleLockTagOnClickElementsEvent(body, elements, event);
 		if (isEventOnElements(event, elements) && isPopupClose(popup) && !isSubPopupOpen(subpopup) && ![...popupSender].includes(event.target)) {
 			toggleDisplayPopup(popup);
-		} else if (isEventOnElements(event, elements) && !isPopupClose(popup) && event.target == body || getTargetCloserParent(event.target)) {
+		} else if (isEventOnElements(event, elements) && !isPopupClose(popup) && event.target == body || getTargetParent(event.target, popupCloserSelector)) {
 			toggleDisplayPopup(popup);
 		} else if (isEventOnElements(event, elements) && !isPopupClose(popup) && event.target !== body) {
 			toggleDisplayPopup(popup);
