@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const arrows = document.querySelectorAll('.arrow-bg');
 	const openClass = 'open';
-
+	const eventBreakPoint = 1200;
+	let windowWidth;
+	
 	function addArrowOpenClass(arrow, openclass) {
 		arrow.classList.add(openclass);
 	}
@@ -16,13 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			let arrowPositionOfTopWindow = arrow.getBoundingClientRect().top;
 			let heightOfAvailableScreenArea = windowHeight - arrowHeight + 5;
 			let isArrowLocatedOnScreen = (arrowPositionOfTopWindow > 0) && (arrowPositionOfTopWindow < heightOfAvailableScreenArea) || (arrowHeight >= windowHeight);
-			isArrowLocatedOnScreen ? addArrowOpenClass(arrow, openclass) : removeArrowOpenClass(arrow, openclass);
+			(isArrowLocatedOnScreen && windowWidth > eventBreakPoint) ? addArrowOpenClass(arrow, openclass) : removeArrowOpenClass(arrow, openclass);
 		});		
 	}
+
 	function scrollHandler(e) {
 		addArrowsOpenClassOnScreen(arrows, openClass);
 	}
-	
+	function resizeHandler(e) {
+		windowWidth = window.innerWidth;
+	}
 	document.addEventListener('scroll', scrollHandler);
-
+	window.addEventListener('resize', resizeHandler);
 });
