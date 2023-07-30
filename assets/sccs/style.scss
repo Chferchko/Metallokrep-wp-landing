@@ -38,7 +38,7 @@
 	position: relative;
 	z-index: 2;
 	background:
-		url("../images/features/features_bg_logo.png") right center no-repeat,
+		url("../images/features/features_bg_logo.png") right 100% no-repeat,
 		url("../images/features/features_bg.png") center no-repeat;
 	&__title {
 		color: var(--primary-yelow);
