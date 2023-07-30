@@ -63,8 +63,9 @@
 	&__container {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		justify-content: space-between;
-		gap: 0 24px;
+		gap: 24px;
 	}
 	&__content {
 		flex: 0 1 620px;

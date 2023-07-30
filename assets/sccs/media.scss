@@ -1,7 +1,7 @@
 /* ---------- media quaries ---------- */
 @media (max-width: 1200px) {
 	.features {
-		padding: 50px 0 155px;
+		padding: 50px 0;
 		background: url("../images/features/features_bg.png") center no-repeat;
 		&__title {
 			margin: 0px auto 50px;
@@ -10,6 +10,26 @@
 			&:not(:last-child) {
 				margin: 0px 0px 20px 0px;
 			}
+		}
+	}
+	.technology {
+		padding: 50px 0;
+		&__container {
+			justify-content: center;
+		}
+		.arrow-bg {
+			top: 0;
+			height: 100%;
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+		&__titles {
+			text-align: center;
+		}
+		&__text {
+			text-align: justify;
 		}
 	}
 }
@@ -81,16 +101,23 @@
 	.intro {
 		padding: 120px 0 50px;
 	}
+	.technology {
+		&__title {
+			font-size: 24px;
+		}
+		.transparent {
+			font-size: 80px;
+		}
+		.bold {
+			font-size: 52px;
+		}
+		.P1 {
+			--size-medium: 16px;
+		}
+	}
 }
 
 @media (max-width: 577px) {
-	/* 
-	.list-item {
-		&::before {
-			width: 60px;
-			height: 60px;
-		}
-	} */
 	.button {
 		width: 100%;
 	}
@@ -130,6 +157,14 @@
 			&__title {
 				text-align: center;
 			}
+		}
+	}
+	.technology {
+		.transparent {
+			font-size: 55px;
+		}
+		.bold {
+			font-size: 35px;
 		}
 	}
 }
