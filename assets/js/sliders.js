@@ -33,7 +33,7 @@ var swiper = new Swiper(".products__example-slider", {
 		}
 	}, */
 
-	width: 500, // ширина одного слайда
+	/* width: 500, */ // ширина одного слайда
 
 	slidesPerView: 1, // Количество слайдов для показа
 
