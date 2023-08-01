@@ -35,13 +35,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function isEventOnElements(event, elements) {
 		return elements.includes(event.target) || elements.includes(getTargetParent(event.target, popupCloserSelector)) || elements.includes(getTargetParent(event.target, popupOpenerSelector));
+	}	
+	function lockDefaultEventElementsAction(event, elements) {
+		isEventOnElements(event, elements) ? event.preventDefault() : false;
 	}
 	function toggleLockTagOnClickElementsEvent(tag, elements, event) {
 		isEventOnElements(event, elements) ? toggleLockTag(tag) : false;
 	}
 
 	function toggleDisplayPopupOnClickElementsEvent(popup, subpopup, elements, event) {
-		event.preventDefault();
+		lockDefaultEventElementsAction(event, elements);
 		toggleLockTagOnClickElementsEvent(body, elements, event);
 		if (isEventOnElements(event, elements) && isPopupClose(popup) && !isSubPopupOpen(subpopup) && ![...popupSender].includes(event.target)) {
 			toggleDisplayPopup(popup);
