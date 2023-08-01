@@ -354,11 +354,13 @@
 		align-items: center;
 		justify-content: space-between;
 		margin: 0px 0px 109px 0px;
+		gap: 24px;
 	}
 	&__description-info {
-		flex: 0 1 645px;
+		flex: 1 1 645px;
 	}
 	&__description-logo {
+		gap: 25px;
 		display: flex;
 		justify-content: space-between;
 		margin: 0px 0px 45px 0px;
@@ -379,9 +381,13 @@
 		color: var(--additional-white);
 	}
 	&__description-list {
-		flex: 0 1 548px;
+		flex: 1 1 548px;
 	}
 	&__description-list-item {
+		padding: 0;
+		&:not(:last-child) {
+			margin: 0px 0px 50px 0px;
+		}
 		.list-item__title {
 			font-size: 16.948px;
 			&:not(:last-child) {
