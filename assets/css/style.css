@@ -233,11 +233,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
+  gap: 25px;
 }
 .footer__contacts {
-  flex: 0 1 440px;
+  flex: 1 1 440px;
   color: var(--text-light);
 }
 .footer__contacts-email::before {
@@ -1074,8 +1075,15 @@ h1, h2, h3, h4, h5, h6 {
   .features,
   .technology,
   .products,
-  .about {
+  .about,
+  .footer {
     padding: 50px 0;
+  }
+  .footer__contacts-email, .footer__contacts-phone {
+    padding: 0;
+  }
+  .footer__contacts-email {
+    margin: 0px 0px 15px 0px;
   }
 }
 @media (max-width: 993px) {
@@ -1268,6 +1276,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--size-large);
     flex: 0 1 350px;
   }
+  .footer__title {
+    margin: 0px 0px 30px 0px;
+  }
+  .footer__content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .footer__contacts p {
+    text-align: justify;
+  }
 }
 @media (max-width: 577px) {
   .button {
@@ -1345,5 +1363,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 376px) {
   .about__logo-title {
     font-size: var(--size-medium);
+  }
+  .footer__contacts-email a, .footer__contacts-phone a {
+    --size-medium: 20px;
   }
 }
