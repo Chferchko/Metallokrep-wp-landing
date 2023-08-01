@@ -1120,7 +1120,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: right 0.3s;
   }
   .header__menu.mobile-menu-open {
-    right: -1px;
+    right: 0px;
   }
   .header__button {
     margin: 0 15px;
