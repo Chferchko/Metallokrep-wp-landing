@@ -129,29 +129,30 @@
 	/* ========= products__example ========= */
 	&__example {
 		display: flex;
-		align-items: stretch;
+		align-items: flex-start;
 		justify-content: space-between;
-		gap: 0 24px;
+		gap: 24px;
+	}
+	&__example-item {
+		position: relative;
+		flex: 0 1 500px;
+		min-width: 0;
 	}
 	&__example-slider {
-		flex: 0 0 500px;
+		position: static !important;
 	}
 	.swiper {
 		margin-left: 0;
 		margin-right: 0;
 	}
 	.swiper-slide {
-		height: 500px;
 		border-radius: 15px;
 		overflow: hidden;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
+		@extend %adapt-img;
+		padding: 0 0 100% 0;
 	}
 	.swiper-pagination {
-		bottom: 22px !important;
+		bottom: -42px !important;
 	}
 	.swiper-pagination-bullet {
 		width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 21px));
@@ -223,7 +224,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 0 24px;
+		gap: 24px;
 	}
 	&__minova-content {
 		flex: 0 1 582px;
@@ -277,6 +278,8 @@
 		overflow: hidden;
 		margin: 0px 0px 15px 0px;
 		transform: rotateX(0deg);
+		@extend %adapt-img;
+		padding: 0 0 100% 0;
 	}
 	&__list-item-title {
 		color: var(--primary-yelow);
@@ -292,10 +295,11 @@
 		position: absolute;
 		top: 25px;
 		left: 25px;
-		width: 319px;
-		height: 319px;
+		width: calc(100% - 50px);
+		aspect-ratio: 1/1;
 		padding: 25px;
 		border-radius: 5px;
+		overflow-y: scroll;
 		color: var(--text-light);
 		transform: rotateX(180deg);
 		background-color: var(--additional-white);
@@ -310,7 +314,7 @@
 		display: flex;
 		justify-content: space-between;
 		color: var(--additional-white);
-		gap: 0 24px;
+		gap: 24px;
 	}
 	&__services-link {
 		flex: 0 1 376px;

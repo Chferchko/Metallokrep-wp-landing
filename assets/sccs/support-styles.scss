@@ -23,9 +23,7 @@ body {
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		transition:
-			background 0.3s,
-			z-index 0.3s;
+		transition: background 0.3s;
 		background: #00000000;
 		z-index: -1;
 	}

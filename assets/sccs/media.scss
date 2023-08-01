@@ -1,5 +1,13 @@
 /* ---------- media quaries ---------- */
 @media (max-width: 1200px) {
+	.arrow-bg {
+		top: 0;
+		height: 100%;
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
 	.features {
 		padding: 50px 0;
 		background: url("../images/features/features_bg.png") center no-repeat;
@@ -17,14 +25,6 @@
 		&__container {
 			justify-content: center;
 		}
-		.arrow-bg {
-			top: 0;
-			height: 100%;
-			&::before,
-			&::after {
-				display: none;
-			}
-		}
 		&__titles {
 			text-align: center;
 		}
@@ -32,9 +32,18 @@
 			text-align: justify;
 		}
 	}
+	.products {
+		padding: 50px 0;
+		&__container {
+			gap: 50px;
+		}
+	}
 }
 
 @media (max-width: 993px) {
+	.section-title {
+		font-size: var(--size-large);
+	}
 	.header {
 		&__container {
 			position: relative;
@@ -84,6 +93,75 @@
 	.features {
 		padding: 50px 0;
 	}
+	.products {
+		&__example {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 73px;
+		}
+		&__example-title {
+			text-align: center;
+			font-size: var(--size-medium);
+		}
+		&__example-description {
+			text-align: justify;
+		}
+		&__example-text {
+			max-width: none;
+		}
+		&__example__button {
+			width: 100%;
+		}
+		&__catalog {
+			gap: 25px;
+			padding: 25px;
+		}
+		&__catalog-description {
+			padding: 0;
+		}
+		&__catalog-link-button {
+			padding: 17px 5px;
+		}
+		&__minova-logo:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+		&__list-item {
+			padding: 10px;
+			&:hover {
+				.products__list-item-img {
+					transform: rotateX(0deg);
+				}
+			}
+		}
+		&__list-item-title {
+			min-height: 67px;
+		}
+		&__list-item-text {
+			position: static;
+			padding: 0;
+			color: var(--additional-white);
+			transform: rotateX(0deg);
+			background-color: transparent;
+			overflow-y: visible;
+		}
+		&__services {
+			flex-wrap: wrap-reverse;
+		}
+		&__services-link {
+			flex: 1 1 100%;
+			text-align: center;
+		}
+		&__services-link-title {
+			margin: 0px 0px 20px 0px;
+		}
+		&__services-link-button {
+			width: auto;
+		}
+		&__services-technologies,
+		&__services-description {
+			flex: 1 1 calc(50% - 12px);
+		}
+	}
 }
 
 @media (max-width: 769px) {
@@ -113,6 +191,42 @@
 		}
 		.P1 {
 			--size-medium: 16px;
+		}
+	}
+	.products {
+		&__minova-description {
+			font-size: var(--size-regular);
+		}
+		&__minova-catalog-link {
+			flex: 1 0 275px;
+		}
+		&__minova-button {
+			padding: 17px 0;
+		}
+		&__list-row {
+			flex-direction: column;
+			gap: 50px;
+		}
+		&__list-item {
+			padding: 0 60px;
+		}
+		&__list-item-title {
+			min-height: auto;
+		}
+		&__list-item-text {
+			width: 100%;
+			aspect-ratio: auto;
+		}
+		&__services-link-button {
+			width: 100%;
+		}
+		&__services-technologies-title,
+		&__services-description-title {
+			text-align: center;
+		}
+		&__services-technologies-list,
+		&__services-description-list {
+			text-align: justify;
 		}
 	}
 }
@@ -165,6 +279,34 @@
 		}
 		.bold {
 			font-size: 35px;
+		}
+	}
+	.products {
+		&__catalog,
+		&__minova {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__catalog-description {
+			flex: 0 1 auto;
+		}
+		&__catalog-link-title,
+		&__catalog-description-title,
+		&__minova-title {
+			text-align: center;
+		}
+		&__minova-description {
+			text-align: justify;
+		}
+		&__list-row {
+			flex-direction: column;
+			gap: 35px;
+		}
+		&__list-item {
+			padding: 0;
+		}
+		&__list-item-text {
+			text-align: justify;
 		}
 	}
 }
