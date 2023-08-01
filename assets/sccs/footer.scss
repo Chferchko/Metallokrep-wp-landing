@@ -11,17 +11,17 @@
 		position: relative;
 		z-index: 2;
 		display: flex;
-		align-items: center;
+		align-items: stretch;
 		justify-content: space-between;
+		gap: 25px;
 	}
 	&__contacts {
-		flex: 0 1 440px;
+		flex: 1 1 440px;
 		color: var(--text-light);
 	}
 	&__contacts-email {
 		&::before {
 			background-image: url("../images/footer/icons/mail.svg");
-			
 		}
 	}
 	&__contacts-phone {

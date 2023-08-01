@@ -49,8 +49,18 @@
 	.features,
 	.technology,
 	.products,
-	.about {
+	.about,
+	.footer {
 		padding: 50px 0;
+	}
+	.footer {
+		&__contacts-email,
+		&__contacts-phone {
+			padding: 0;
+		}
+		&__contacts-email {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 }
 
@@ -268,6 +278,20 @@
 			flex: 0 1 350px;
 		}
 	}
+	.footer {
+		&__title {
+			margin: 0px 0px 30px 0px;
+		}
+		&__content {
+			flex-wrap: wrap-reverse;
+			justify-content: center;
+		}
+		&__contacts {
+			p {
+				text-align: justify;
+			}
+		}
+	}
 }
 
 @media (max-width: 577px) {
@@ -370,6 +394,14 @@
 	.about {
 		&__logo-title {
 			font-size: var(--size-medium);
+		}
+	}
+	.footer {
+		&__contacts-email,
+		&__contacts-phone {
+			a {
+				--size-medium: 20px;
+			}
 		}
 	}
 }
