@@ -978,11 +978,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   margin: 0px 0px 109px 0px;
+  gap: 24px;
 }
 .about__description-info {
-  flex: 0 1 645px;
+  flex: 1 1 645px;
 }
 .about__description-logo {
+  gap: 25px;
   display: flex;
   justify-content: space-between;
   margin: 0px 0px 45px 0px;
@@ -1003,7 +1005,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--additional-white);
 }
 .about__description-list {
-  flex: 0 1 548px;
+  flex: 1 1 548px;
+}
+.about__description-list-item {
+  padding: 0;
+}
+.about__description-list-item:not(:last-child) {
+  margin: 0px 0px 50px 0px;
 }
 .about__description-list-item .list-item__title {
   font-size: 16.948px;
@@ -1034,7 +1042,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .features {
-    padding: 50px 0;
     background: url("../images/features/features_bg.png") center no-repeat;
   }
   .features__title {
@@ -1042,9 +1049,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .features__list-item:not(:last-child) {
     margin: 0px 0px 20px 0px;
-  }
-  .technology {
-    padding: 50px 0;
   }
   .technology__container {
     justify-content: center;
@@ -1055,11 +1059,23 @@ h1, h2, h3, h4, h5, h6 {
   .technology__text {
     text-align: justify;
   }
-  .products {
-    padding: 50px 0;
-  }
   .products__container {
     gap: 50px;
+  }
+  .about__title {
+    margin: 0px 0px 40px 0px;
+  }
+  .about__description {
+    margin: 0px 0px 50px 0px;
+  }
+  .about__description-list-item:not(:last-child) {
+    margin: 0px 0px 25px 0px;
+  }
+  .features,
+  .technology,
+  .products,
+  .about {
+    padding: 50px 0;
   }
 }
 @media (max-width: 993px) {
@@ -1175,6 +1191,16 @@ h1, h2, h3, h4, h5, h6 {
   .products__services-technologies, .products__services-description {
     flex: 1 1 calc(50% - 12px);
   }
+  .about__description {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__description-logo {
+    justify-content: center;
+  }
+  .about__description-list-item .list-item__text .br {
+    display: none;
+  }
 }
 @media (max-width: 769px) {
   .list-item {
@@ -1234,6 +1260,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   .products__services-technologies-list, .products__services-description-list {
     text-align: justify;
+  }
+  .about__description-text {
+    text-align: justify;
+  }
+  .about__logo-title {
+    font-size: var(--size-large);
+    flex: 0 1 350px;
   }
 }
 @media (max-width: 577px) {
@@ -1297,9 +1330,20 @@ h1, h2, h3, h4, h5, h6 {
   .products__list-item-text {
     text-align: justify;
   }
+  .about__description-logo {
+    flex-wrap: wrap-reverse;
+  }
+  .about__logo-title {
+    text-align: center;
+  }
 }
 @media (max-width: 426px) {
   .intro__title {
     --size-medium: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .about__logo-title {
+    font-size: var(--size-medium);
   }
 }
