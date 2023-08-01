@@ -98,7 +98,7 @@
 			border-radius: 0 0 10px 10px;
 			transition: right 0.3s;
 			&.mobile-menu-open {
-				right: -1px;
+				right: 0px;
 			}
 		}
 		&__button {
