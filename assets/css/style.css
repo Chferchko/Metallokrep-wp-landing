@@ -203,6 +203,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
 }
+.header__contacts a {
+  display: block;
+  transition: color 0.3s;
+}
+.header__contacts a:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.header__contacts a:hover {
+  color: var(--primary-yelow);
+}
 .header__menu-burger {
   display: none;
 }
@@ -1056,6 +1066,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
   }
   .arrow-bg::before, .arrow-bg::after {
+    display: none;
+  }
+  .header__contacts {
     display: none;
   }
   .features {
