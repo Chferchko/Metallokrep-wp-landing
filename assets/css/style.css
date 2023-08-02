@@ -1382,7 +1382,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   .products__minova-description {
-    text-align: justify;
+    /* text-align: justify; */
   }
   .products__list-row {
     flex-direction: column;
