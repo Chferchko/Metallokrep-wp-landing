@@ -71,6 +71,7 @@
 	.header {
 		&__container {
 			position: relative;
+			padding: 10px 15px;
 		}
 		&__menu-burger {
 			display: flex;
@@ -90,7 +91,7 @@
 		}
 		&__menu {
 			position: fixed;
-			top: 99px;
+			top: 80px;
 			right: -320px;
 			background: var(--text-light);
 			min-width: 320px;
@@ -299,6 +300,16 @@
 		width: 100%;
 	}
 	.header {
+		&__container {
+			padding: 5px 15px;
+		}
+		&__logo-img {
+			height: 40px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
 		&__logo-text {
 			display: none;
 		}
@@ -307,11 +318,17 @@
 				display: none;
 			}
 			&.ghost-button {
-				padding: 11px;
+				padding: 0px;
 			}
 		}
 		&__mobile-button {
 			display: block;
+		}
+		&__menu {
+			top: 50px;
+		}
+		&__menu-burger {
+			padding: 5px 0;
 		}
 	}
 	.intro {
