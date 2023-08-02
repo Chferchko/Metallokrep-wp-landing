@@ -16,7 +16,7 @@
 		gap: 25px;
 	}
 	&__contacts {
-		flex: 1 1 440px;
+		flex: 0 1 440px;
 		color: var(--text-light);
 	}
 	&__contacts-email {
@@ -76,7 +76,25 @@
 			margin: 0px 0px 11px 0px;
 		}
 	}
+	&__map {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+		margin: 25px 0px 0px 0px;
+		box-shadow: 0 0 20px 0px var(--text-light);
+	}
 	&__arrow {
-		top: 13px;
+		top: 0px;
+		height: 100% !important;
+	}
+	.arrow-bg {
+		&::before {
+			border-top: 606px solid var(--text-light);
+		}
+		&::after {
+			border-bottom: 606px solid var(--text-light);
+		}
 	}
 }
