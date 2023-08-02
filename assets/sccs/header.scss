@@ -41,6 +41,18 @@
 			width: 100%;
 		}
 	}
+	&__contacts {
+		a {
+			display: block;
+			transition: color 0.3s;
+			&:not(:last-child) {
+				margin: 0px 0px 5px 0px;
+			}
+			&:hover {
+				color: var(--primary-yelow);
+			}
+		}
+	}
 	&__menu-burger {
 		display: none;
 		&::before,

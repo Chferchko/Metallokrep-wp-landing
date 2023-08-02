@@ -8,6 +8,11 @@
 			display: none;
 		}
 	}
+	.header {
+		&__contacts {
+			display: none;
+		}
+	}
 	.features {
 		background: url("../images/features/features_bg.png") center no-repeat;
 		&__title {
