@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   overflow: hidden;
   margin: 25px 0px 0px 0px;
-  box-shadow: 0 0 20px 0px var(--text-light);
+  box-shadow: 0 0 10px 0px var(--text-light);
 }
 .footer__arrow {
   top: 0px;
@@ -665,9 +665,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 12px 0px;
 }
 .form-popup__phonenumber {
-  margin: 0px 0px 24px 0px;
+  margin: 0px 0px 12px 0px;
 }
-.form-popup__name, .form-popup__phonenumber {
+.form-popup__comment {
+  margin: 0px 0px 24px 0px;
+  resize: none;
+}
+.form-popup__name, .form-popup__phonenumber, .form-popup__comment {
   padding: 16px 17px;
   border-radius: 4px;
   background: var(--additional-blue-light, #f5f6fc);

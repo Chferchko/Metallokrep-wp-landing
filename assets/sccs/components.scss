@@ -362,10 +362,15 @@
 		margin: 0px 0px 12px 0px;
 	}
 	&__phonenumber {
+		margin: 0px 0px 12px 0px;
+	}
+	&__comment {
 		margin: 0px 0px 24px 0px;
+		resize: none;
 	}
 	&__name,
-	&__phonenumber {
+	&__phonenumber,
+	&__comment {
 		padding: 16px 17px;
 		border-radius: 4px;
 		background: var(--additional-blue-light, #f5f6fc);
