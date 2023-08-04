@@ -1,1 +1,3 @@
-autosize(document.querySelector('textarea'));
+document.addEventListener('DOMContentLoaded', function () {
+	autosize(document.querySelector('textarea'));
+});
