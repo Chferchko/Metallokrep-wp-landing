@@ -1259,9 +1259,6 @@ h1, h2, h3, h4, h5, h6 {
   .technology__title {
     font-size: 24px;
   }
-  .technology .transparent {
-    font-size: 80px;
-  }
   .technology .bold {
     font-size: 52px;
   }
@@ -1371,9 +1368,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .technology__subtitle span img {
     width: 100%;
-  }
-  .technology .transparent {
-    font-size: 55px;
   }
   .technology .bold {
     font-size: 35px;
