@@ -760,6 +760,9 @@ h1, h2, h3, h4, h5, h6 {
 .technology__subtitle span {
   display: block;
 }
+.technology__subtitle span img {
+  margin: 5px 0;
+}
 .technology__text {
   color: var(--text-dark);
 }
@@ -775,12 +778,6 @@ h1, h2, h3, h4, h5, h6 {
 .technology__form {
   position: relative;
   z-index: 2;
-}
-.technology .transparent {
-  font-size: 112px;
-  color: transparent;
-  -webkit-text-stroke: 3px #1f1c0c;
-  letter-spacing: 2.24px;
 }
 .technology .bold {
   font-size: 72.897px;
@@ -1368,6 +1365,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .features .list-item__title {
     text-align: center;
+  }
+  .technology__subtitle span {
+    display: block;
+  }
+  .technology__subtitle span img {
+    width: 100%;
   }
   .technology .transparent {
     font-size: 55px;

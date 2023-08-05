@@ -85,6 +85,9 @@
 	&__subtitle {
 		span {
 			display: block;
+			img {
+				margin: 5px 0;
+			}
 		}
 		font-weight: 700;
 		text-transform: uppercase;
@@ -104,12 +107,6 @@
 	&__form {
 		position: relative;
 		z-index: 2;
-	}
-	.transparent {
-		font-size: 112px;
-		color: transparent;
-		-webkit-text-stroke: 3px #1f1c0c;
-		letter-spacing: 2.24px;
 	}
 	.bold {
 		font-size: 72.897px;
