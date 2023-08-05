@@ -359,6 +359,14 @@
 		}
 	}
 	.technology {
+		&__subtitle {
+			span {
+				display: block;
+				img {
+					width: 100%;
+				}
+			}
+		}
 		.transparent {
 			font-size: 55px;
 		}
