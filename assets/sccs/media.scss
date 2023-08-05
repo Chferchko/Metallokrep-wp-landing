@@ -207,6 +207,9 @@
 				}
 			}
 		}
+		&__partners-subtitle {
+			margin: 0px 0px 50px 0px;
+		}
 	}
 }
 
@@ -228,9 +231,6 @@
 	.technology {
 		&__title {
 			font-size: 24px;
-		}
-		.transparent {
-			font-size: 80px;
 		}
 		.bold {
 			font-size: 52px;
@@ -367,9 +367,6 @@
 				}
 			}
 		}
-		.transparent {
-			font-size: 55px;
-		}
 		.bold {
 			font-size: 35px;
 		}
@@ -433,5 +430,10 @@
 				--size-medium: 20px;
 			}
 		}
+	}
+	.order-popup,
+	.thx-popup {
+		max-width: 300px;
+		left: calc((100vw - 300px) / 2);
 	}
 }

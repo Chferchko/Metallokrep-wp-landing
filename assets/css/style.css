@@ -1,7 +1,7 @@
-.products__list-item-img, .products .swiper-slide {
+.about__partners-map, .products__list-item-img, .products .swiper-slide {
   position: relative;
 }
-.products__list-item-img img, .products .swiper-slide img {
+.about__partners-map img, .products__list-item-img img, .products .swiper-slide img {
   position: absolute;
   top: 0;
   left: 0;
@@ -581,6 +581,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .order-popup {
   max-width: 360px;
+  left: calc((100vw - 360px) / 2);
   padding: 30px 25px;
 }
 .order-popup__header {
@@ -628,6 +629,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .thx-popup {
   max-width: 320px;
+  left: calc((100vw - 320px) / 2);
   padding: 16px;
 }
 .thx-popup__title {
@@ -648,8 +650,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   position: fixed;
   top: 130%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(0, 0);
   border-radius: 8px;
   background: var(--additional-white, #fff);
   box-shadow: 0px 16px 64px 0px rgba(30, 47, 64, 0.05);
@@ -658,7 +659,7 @@ h1, h2, h3, h4, h5, h6 {
 .order-popup.visible-popup,
 .thx-popup.visible-popup {
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
 }
 
 .form-popup__name {
@@ -1059,6 +1060,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 56.5px;
   height: 56.5px;
 }
+.about__partners {
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.about__partners-subtitle {
+  color: var(--additional-white, #fff);
+  text-align: center;
+  margin: 0px 0px 113px 0px;
+}
+.about__partners-map {
+  padding: 0px 0px 45% 0px;
+}
 
 /* ---------- media quaries ---------- */
 @media (max-width: 1200px) {
@@ -1240,6 +1253,9 @@ h1, h2, h3, h4, h5, h6 {
   .about__description-list-item .list-item__text .br {
     display: none;
   }
+  .about__partners-subtitle {
+    margin: 0px 0px 50px 0px;
+  }
 }
 @media (max-width: 769px) {
   .list-item {
@@ -1258,9 +1274,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .technology__title {
     font-size: 24px;
-  }
-  .technology .transparent {
-    font-size: 80px;
   }
   .technology .bold {
     font-size: 52px;
@@ -1372,9 +1385,6 @@ h1, h2, h3, h4, h5, h6 {
   .technology__subtitle span img {
     width: 100%;
   }
-  .technology .transparent {
-    font-size: 55px;
-  }
   .technology .bold {
     font-size: 35px;
   }
@@ -1419,5 +1429,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer__contacts-email a, .footer__contacts-phone a {
     --size-medium: 20px;
+  }
+  .order-popup,
+  .thx-popup {
+    max-width: 300px;
+    left: calc((100vw - 300px) / 2);
   }
 }
