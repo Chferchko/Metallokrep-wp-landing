@@ -404,6 +404,19 @@
 			height: 56.5px;
 		}
 	}
+	&__partners {
+		max-width: 1920px;
+		margin: 0px auto;
+	}
+	&__partners-subtitle {
+		color: var(--additional-white, #fff);
+		text-align: center;
+		margin: 0px 0px 113px 0px;
+	}
+	&__partners-map {
+		padding: 0px 0px 45% 0px;
+		@extend %adapt-img;
+	}
 }
 
 @import "media.scss";
